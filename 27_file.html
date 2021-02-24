@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Visiblity and z-index</title>
+    <style>
+        .box{
+            width:170px;
+            height:170px;
+            border: 2px solid black;
+        }
+        #box1{
+            position: relative;
+            top: 34px; 
+            /* z-index only works in when position is in: relative absolute sticky or fixed */
+            /* in simple definition z-index is used when we want to overcome on another block. whose z-index is greater than other than block then that block overcome on the smaller value of the z-index block */
+            z-index: 1;
+            background-color: red;
+            }
+            /* here box1 overcome above the box2 */
+        #box2{
+            /* visibility: will hide the element but not the space; */
+            /* visibility: hidden;  */
+            position: relative; 
+            top: 50px;
+            z-index: -1; 
+            background-color: rgb(0, 151, 144);
+            }
+        #box3{
+            /* display: will hide the element and the space; */
+            /* display: none; */
+            background-color:yellow;
+            }
+        #box4{ background-color: rgb(255, 0, 98);}
+
+    </style>
+</head>
+<body>
+    <div class="box" id="box1"></div>
+    <div class="box" id="box2"></div>
+    <div class="box" id="box3"></div>
+    <div class="box" id="box4"></div>
+</body>
+</html>

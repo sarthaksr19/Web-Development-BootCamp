@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex box</title>
+    <style>
+        .container {
+            height: 544px;
+            width: 100%;
+            border: 2px solid black;
+            /* intialization of flex box */
+            display: flex;
+
+            /* flex properties for flex container */
+            /* flex-direction: row; */
+            /* by deafult row is always selected n,n-1,n-2,..... here n is flex items box */
+            /* flex-direction: column; /* fall all the flex items in a new column n,n-1,n-2,...*/
+            /* flex-direction: row-reverse;  reverses the flex item in a row as like- n box,n-1box,n-2 box..... */
+            /* flex-direction: column-reverse;   reverses the flex item in a coloum as like- n box,n-1box,n-2 box..... */
+
+            /* flex-wrap: wrap; */
+            /* defualt value of flex-direction is no-wrap*/
+
+            /* shorthand to write the both direction as well as wrap in one line of code */
+            /* syntax=> flex-flow: flex-direction flex-wrap; */
+
+            /* flex-flow: row-reverse wrap; */
+
+            /* put all the content in the center of the conatiner at the starting row*/
+            /* justify-content: center;  */
+            /* justify-content: space-between; */
+            /* sapce between only the boxes not starting or ending edges*/
+            /* justify-content: space-evenly; */
+            /* sapce between boxes and edges are equal weather in space-around start and end of the edge have less space.*/
+            /* justify-content: space-around; */
+            /*sapce between left and right side of all the boxes*/
+
+            /* align-items: center; */
+            /*aligns the box in the center of the conatiner */
+            /* align-items: flex-end; */
+            /*aligns the box in the foot of the conatiner */
+            /* align-items: flex-start; */
+            /*aligns the box in the start of the conatiner */
+            /* align-items: stretch; */
+
+        }
+
+        .items {
+            border: 2px solid green;
+            padding: 5px;
+            margin: 5px;
+            background-color: tomato;
+            width: 120px;
+            height: 120px;
+        }
+
+        /* flex properties for flex items */
+        #item-1 {
+            /* higher the order later shows in the container. order works as an ascending order */
+            /* order: 1; */
+            /* flex-grow: 2; */
+        }
+
+        #item-2 {
+            /* flex-grow: 3; grows the items
+            flex-shrink: 2;    shrinks the items*/
+            flex-basis: 50px;
+            /* when flex-direction: is set to row flex-basis: will control width */
+            /* when flex-direction: is set to column flex-basis: will control height */
+
+        }
+
+        #item-3 {
+            /* order: 5;
+            flex-shrink: 3; */
+
+            /* shorthand for writing flex property flex: grow shrink basis */
+            flex: 2 2 150px;
+
+            /* in this align-self proprty we align our items in start end and center */
+            align-self: flex-end;
+            align-self: flex-start;
+            align-self: center;
+        }
+
+        /* #item-4{}
+        #item-5{}
+        #item-6{} */
+    </style>
+</head>
+
+<body>
+    <h3>This is Flex Box</h3>
+    <div class="container">
+        <div class="items" id="item-1">First box</div>
+        <div class="items" id="item-2">Second box</div>
+        <div class="items" id="item-3">Third box</div>
+        <!-- <div class="items" id="item-4">Fourth box</div>
+        <div class="items" id="item-5">Fifth box</div>
+        <div class="items" id="item-6">Sixth box</div> -->
+    </div>
+</body>
+
+</html>

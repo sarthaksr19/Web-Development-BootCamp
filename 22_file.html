@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseduo selectors and more desining</title>
+    <style>
+        .container{
+            border: 3px solid red;
+            background-color: seagreen;
+            padding: 25px;
+            margin: 25px auto;
+            width: 600px;
+        }
+        a{
+            text-decoration: none;
+            color: whitesmoke;
+        }
+        a:hover{
+            color: black;
+            background-color: rgb(210, 221, 240);
+        }
+        a:visited{
+            color:rgb(6, 45, 116)
+        }
+        a:active{
+            color: crimson;
+        }
+        .btn:hover{
+            background: orangered;
+            border: 2px solid black;
+        }
+        .btn{
+            background-color: #d1573f;
+            border-radius: 5px;
+            cursor: pointer;
+            border: none;
+            padding: 5px;
+            font-size: 12px;
+            color: whitesmoke;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container" id="cont1">
+        <h2>This is My Heading</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, cum facilis! Repellendus nam harum nihil suscipit voluptatem laboriosam repudiandae explicabo necessitatibus dolor dignissimos nulla, cupiditate illum velit quidem quo ut veniam, nostrum quis vero?</p>
+        <a href="https://twiiter.com" target="_blank" class="btn">Read more</a>
+        <button class="btn">Contact Us</button>
+    </div>
+    
+</body>
+</html>

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+</head>
+
+<body>
+    <h2>This is an HTML Form Tutorial</h2>
+    <form action="backend.py">
+        <label for="name">Name</label>
+        <div>
+            <input type="text" name="myName" id="name">
+        </div>
+        <br>
+        <label for="role">Role</label>
+        <div>
+            <input type="text" name="myRole" id="role">
+        </div>
+        <br>
+        <label for="email">E-mail</label>
+        <div>
+            <input type="email" name="myEmail" id="email">
+        </div>
+        <br>
+        <div>
+            <label for="yop">Year of Passing</label>
+            <select name="myYOP" id="yop">
+                <option value="2018">2018</option>
+                <option value="2019" selected>2019</option>
+                <option value="2020">2020</option>
+                <option value="2021">2021</option>
+            </select>
+        </div>
+        <br>
+        <div>
+            DOB <input type="date" name="myDateOfBirth">
+        </div>
+        <br>
+        <div>
+            Gender Male<input type="radio" name="myGender"> FeMale<input type="radio" name="myGender">
+            Others<input type="radio" name="myGender">
+        </div>
+        <br>
+        <label for="number">Mobile Number</label>
+        <div>
+            <input type="number" name="myNumber" id="number">
+        </div>
+        <br>
+        <label for="address">Address</label>
+        <div>
+            <input type="text" name="MyAdresses" id="address">
+        </div>
+        <br>
+        <label for="acknowledge">Are you acknowledge this form </label>
+        <div>
+            <input type="checkbox" name="myAcknowlegement" id="acknowledge">
+        </div>
+        <br>
+        <label for="about">Enter About Yourself</label>
+        <div>
+            <br><textarea name="myText" cols="30" rows="10" id="about"></textarea>
+        </div>
+        <br>
+        <div>
+            <input type="submit" value="Submit form">
+            <input type="reset" value="Reset form">
+        </div>
+
+
+    </form>
+</body>
+
+</html>

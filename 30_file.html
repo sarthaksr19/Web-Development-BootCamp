@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Queries</title>
+    <style>
+        .box{
+            font-size: 50px;
+            background-color: red;
+            color: white;
+            text-align: center;
+            display: none;
+        }
+        /* only screen is here used for showing that we here only support media query for screen only */
+        /* media query is just like an if condition */
+        @media only screen and (max-width: 412px){
+            #box-1{
+                display: block;
+                background-color: cyan;
+            }
+        }
+        @media only screen and (min-width: 412px) and (max-width: 768px) {
+            #box-2{
+                display: block;
+                background-color: teal;
+            }
+        }
+        @media only screen and (min-width: 769px) and (max-width: 1024px){
+            #box-3{
+                display: block;
+                background-color: tomato;
+            }
+        }
+        @media only screen and (min-width: 1025px){
+            #box-4{
+                display: block;
+                background-color: green;
+            }
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="box" id="box-1">Mai ek smart phone hoon</div>
+    <div class="box" id="box-2">Mai ek tablet hoon</div>
+    <div class="box" id="box-3">Mai ek desktop computer hoon</div>
+    <div class="box" id="box-4">mai ek wide screen computer hoon</div>
+    
+</body>
+</html>

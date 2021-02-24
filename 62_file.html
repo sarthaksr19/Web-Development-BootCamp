@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JSON </title>
+</head>
+
+<body>
+    <div class="container">
+        This is my Container
+    </div>
+    <script>
+        let jsonObj = {
+            name: "Ram",
+            brother: "Laxman",
+            addres: "Aayodhya",
+            contact: 5222876
+
+        }
+
+        console.log(jsonObj);
+        // stringify(obj): converts object into object
+        let myJsonStr = JSON.stringify(jsonObj);
+        console.log(myJsonStr);
+
+        // once we make string then we apply all string function. want to some change in jsonObj then we use string function as we stringfy our object into the string.
+        let newStr = myJsonStr.replace(5222876,84568366);
+        console.log(newStr);
+
+        // if we want to change string again in object form then we use parse(str) function.
+        newJsonObj = JSON.parse(newStr);
+        console.log(newJsonObj);
+    </script>
+
+</body>
+
+</html>

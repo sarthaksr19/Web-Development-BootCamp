@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arrow Function</title>
+</head>
+
+<body>
+    <div class="container">
+        This is Arrow Function
+    </div>
+    <script>
+        // function greet() {
+        //     console.log("Good Morning");
+        // }
+
+        // shortcut to write above function with the help of arrow function. let see
+        // greet = ()=> {
+        //     console.log("Good Morning!");
+        // }
+
+        // shorcut of arrow function of above greet function.
+
+        greet = () => console.log("Good Morning!");
+
+        greet();
+
+
+        setTimeout(() => {
+            console.log("We are inside settimeout");
+        }, 3000);
+
+        // sum = (a,b) => {
+        //     return a+b;
+        // }
+
+        // shortcut to write above sum function with the help of arrow function
+        sum = (a, b) => a + b;
+
+        // single argument without parenthesis ok. whenever two argument then we have to use patenthesis. otherwise, it throws an error.
+        half = a => a / 2;
+
+        // cretaing a object
+
+        let obj1={
+            names: ["Ram", "Shayam", "Murari", "Chandrashekhara", "Neelkantha"],
+            speak() {
+                this.names.forEach((students) => {
+                    console.log("Namastey " + students);
+                });
+            }
+        }
+        obj1.speak();
+
+        // lexical this. => refer to Cwh 60th last minute timestamp.
+
+    </script>
+
+</body>
+</html>

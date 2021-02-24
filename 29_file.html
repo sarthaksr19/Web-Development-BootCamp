@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Size unit</title>
+    <style>
+        /* if we want all the size in a similiar  then we use rem */
+        html{
+            font-size: 25px;
+        }
+        .container{
+            border: 2px solid red;
+            font-size: 10px;
+            /* width: 400px; */
+            /* height: 400px; */
+            /* height: 100vh;  view port height. it is a type of percentage */
+            /* width: 100vw; view port width. it is also an type of percentage whose takes all the width of the page*/
+        }
+        h3{
+            text-align: center;
+        }
+        #first{
+            /* font-size: 5em; em inherits from parent block container 10*5 = 50px */
+            /* padding: 3em;  here em inherits from font-size 50*3 = 150px */
+        }
+        #second{
+            /* font-size: 3rem;
+            padding: 3rem; */
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h3 id="first">This is first Heading</h3>
+        <h3 id="second">This is second Heading</h3>
+        <h3 id="third">This is third Heading</h3>
+
+    </div>
+    
+</body>
+</html>

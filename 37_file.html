@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transitions in CSS</title>
+    <style>
+        #box{
+            display: flex;
+            justify-content: center;
+            align-items: center;  /*align item inside the box shift towards the center*/
+            background-color: darkturquoise;
+            height: 200px;
+            width: 200px;
+
+            /* transition-property: background-color;
+            transition-duration: 3s;
+            transition-timing-function: ease-in-out; */
+
+            /* transition shorthand property in one hand */
+            /* transition: background duration timing-function delay */
+
+            /* transition: background-color 3s ease-in .2s */
+
+            /* want to add multiple transition property then add "all" at the place of "background" */
+
+            transition: all 1s ease-in 0s
+        }
+
+        #box:hover{
+            background-color: darkcyan;
+            width: 350px;
+            height: 300px;
+            border-radius: 50px;
+            font-size: 25px;
+
+        }
+
+    </style>
+</head>
+<body>
+    <h1>This is CSS Transitions</h1>
+    <div class="container">
+        <div id="box">
+            This is a Box
+        </div>
+    </div>
+    
+</body>
+</html>

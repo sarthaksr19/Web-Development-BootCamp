@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Grid + MediaQueries</title>
+    <style>
+        .container {
+            display: grid;
+            grid-gap: 1rem;
+            grid-template-areas:
+                'navbar navbar navbar navbar'
+                'section section section aside'
+                'footer footer footer footer';
+
+        }
+
+        nav {
+            grid-area: navbar;
+        }
+
+        section {
+            grid-area: section;
+        }
+
+        aside {
+            grid-area: aside;
+
+        }
+
+        footer {
+            grid-area: footer;
+            text-align: center;
+        }
+
+        @media only screen and (max-width: 412px) {
+            body {
+                background-color: cyan;
+            }
+        }
+
+        @media only screen and (min-width: 412px) and (max-width: 768px) {
+            body {
+                background-color: teal;
+            }
+        
+            .container {
+                grid-template-areas:
+                    'navbar navbar navbar navbar'
+                    'section section section section'
+                    'aside aside aside aside'
+
+                    'footer footer footer footer';
+
+            }
+            aside{
+                display: none;
+            }
+        }
+
+            @media only screen and (min-width: 769px) and (max-width: 1024px) {
+                body {
+                    background-color: tomato;
+                }
+            
+
+            .container {
+                grid-template-areas:
+                    'navbar navbar navbar navbar'
+                    'section section section section'
+                    'aside aside aside aside'
+                    'footer footer footer footer';
+
+            }
+            }
+
+            @media only screen and (min-width: 1025px) {
+                body {
+                    background-color: green;
+                }
+            }
+
+            .bdr {
+                border: 2px solid black;
+                padding: 15px;
+                background-color: chocolate;
+            }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <nav class="bdr">
+            Home About Contact
+        </nav>
+        <section class="bdr">
+            <h2>SARTHAK SINGH</h2>
+        </section>
+        <aside class="bdr">
+            <h1>More About Me</h1>
+        </aside>
+        <footer class="bdr">
+            copyright sarthak singh 2021
+        </footer>
+
+    </div>
+
+</body>
+
+</html>

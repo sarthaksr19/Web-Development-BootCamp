@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Variables and custom properties</title>
+    <style>
+        :root{
+            /* Global variable */
+            --box-color: darkslategrey;
+            --maxw: 350px;
+        }
+        .box{
+            /* defining the Variable */
+            /* --box-color: darkslategrey; Local variable only implement in box class */
+            border: 2px solid black;
+            margin: 2px 5px;
+            width: 200px;
+            height: 200px;
+            /* background-color: darkslategray; */
+
+            /* using variable in background color */
+            background-color: var(--box-color);
+
+            /* using variable in box shadow */
+            box-shadow: 5px 5px var(--box-color);
+        }
+
+        .container{
+            /* if we want to use variable box color in container class then it doesn't inherits box-color propperty because box-color is a local variable defined in the box class 
+            so if we want to use a variable in every class then we have to define it in a root statement */
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: var(--maxw);
+            margin: auto;
+            background-color: var(--box-color);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box" id="box_1"></div>
+        <div class="box" id="box_2"></div>
+        <div class="box" id="box_3"></div>
+    </div>
+    
+</body>
+</html>

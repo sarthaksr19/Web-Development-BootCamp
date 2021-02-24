@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation and keyframes</title>
+    <style>
+        .container {
+            display: flex;
+            background-color: dimgray;
+        }
+
+        .box {
+            background-color: darkslategray;
+            width: 250px;
+            height: 250px;
+            position: relative;
+            /*postion property is used here to move this box*/
+            /* animation property */
+            /* animation-name: sarthak1;
+            animation-duration: 2s;
+            animation-iteration-count: 3; */
+
+            /* if we want our animation to do not stop then we use infinite */
+            /* animation-iteration-count: infinite; */
+
+            /* if we want our progress bar to stop and keyframe to condtions then we use forward fill-mode */
+            /* animation-fill-mode: forwards; */
+            /* where if we use alternate in fill mode then it will stopped at their from keyframes condtions */
+            /* animation-fill-mode: alternate; */
+
+            /* animation ease-in, ease-out, ease-in-out use here for speeding property fast-slow, slow-fast, slow-fast-slow respectively to the box animation */
+            /* animation-timing-function: ease-in; */
+            /* animation-timing-function: ease-out; */
+            /* animation-timing-function: ease-in-out; */
+            /* animation-delay: 3s; how long animation takes time before start*/
+            /* animation-direction: alternate; */
+            /* animation-direction: reverse; directs the directions in backward direction */
+
+
+            /* animation-name: sarthak2;
+            animation-duration: 8s;
+            animation-iteration-count: 1; */
+            /* animation-fill-mode: forwards; */
+            /* animation-timing-function: ease; */
+            /* animation-delay: 2s; */
+            /* animation-direction: alternate; */
+
+            /* shorthand to write to animation */
+
+            /* animation: name duration timing-function delay iteration-count direction fill-mode; */
+
+            animation: sarthak2 20s ease-in 5s infinite forwards;
+
+
+        }
+
+        /* keyframes property to make animation */
+        /* keyframe related to sarthak1 animation using from and to property */
+        /* @keyframes sarthak1 {
+            from{
+                width: 100px;
+            }
+            to{
+                width: 1000px;
+            }
+
+        } */
+
+        /* keyframes related to sarthak2 animation using % property */
+        @keyframes sarthak2 {
+            0% {
+                top: 0px;
+                left: 0px;
+            }
+
+            25% {
+                top: 0px;
+                left: 250px;
+            }
+
+            75% {
+                top: 250px;
+                left: 250px;
+            }
+
+            100% {
+                top: 250px;
+                left: 0px;
+            }
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="box">
+            This is Box
+        </div>
+    </div>
+</body>
+
+</html>

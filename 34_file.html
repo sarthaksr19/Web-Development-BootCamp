@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box shadow and text shadow</title>
+    <style>
+        .container{
+            display: flex;
+        }
+
+            
+        .card{
+            margin: 23px 15px;
+            /* border: 2px solid red; */
+            background: url(andrik-langfield-Jqa53u4Q2g4-unsplash.jpg) no-repeat center center/cover;
+            padding: 23px 15px;
+            color: white;
+
+            /* box-shadow: offset-x offset-y color; */
+            /* box-shadow: offset-x offset-y  blur radius color; */
+            /* box-shadow: offset-x offset-y  blur radius spread radius color; */
+            /* box-shadow: 10px 10px grey; shadows bottom and right side of the card */
+            /* box-shadow: -10px -10px grey; shadows top and left side of the card */
+
+            /* blur radius: here we give third argument in box shadow aparts from x and y axis i.e, blur radius*/
+            box-shadow: 14px 13px 7px darkslategray;
+
+            /* spread-radius: 4th argument in box shadow apart from x,y and blur radius. */
+            box-shadow: 14px 13px 7px 5px darkslategray;
+
+            /* if we want to use shadow inside the box then we use inset */
+
+            box-shadow: inset 10px 10px 8px grey;
+
+            /* we can give multiple shadow of diffrent color as well by using seperate ,  */
+
+            box-shadow: 14px 13px 7px 5px darkslategray, 14px 30px 7px 5px black
+        }
+        /* as like box shadow same property will applied on text shadpw also */
+        .card h2{
+            /* for top and left and blur radius */
+            text-shadow: -2px -2px 15px darkcyan;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="card" id="card_1">
+            <h2>This is Python Course</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus sint totam perspiciatis omnis? Fugiat aperiam voluptas nostrum veniam consequatur ea commodi porro saepe eligendi vero eum sunt, modi dolores facilis repellendus? Quo sunt illo, officia nulla sapiente, obcaecati voluptatum aut quos et id cum?</p>
+        </div>
+        <div class="card" id="card_2">
+            <h2>This is C++ Course</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus sint totam perspiciatis omnis? Fugiat aperiam voluptas nostrum veniam consequatur ea commodi porro saepe eligendi vero eum sunt, modi dolores facilis repellendus? Quo sunt illo, officia nulla sapiente, obcaecati voluptatum aut quos et id cum?</p>
+        </div>
+        <div class="card" id="card_3">
+            <h2>This is Core Java Course</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus sint totam perspiciatis omnis? Fugiat aperiam voluptas nostrum veniam consequatur ea commodi porro saepe eligendi vero eum sunt, modi dolores facilis repellendus? Quo sunt illo, officia nulla sapiente, obcaecati voluptatum aut quos et id cum?</p>
+        </div>
+    </div>
+        </body>
+</html>

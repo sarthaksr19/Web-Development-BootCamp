@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Math Object in Js</title>
+</head>
+
+<body>
+    <div class="container">
+        <h1>This is Math Object in JS</h1>
+    </div>
+
+    <script>
+
+        // PRINTING THE MATH OBJECT
+        let m = Math;
+        console.log(m);
+
+        // PRINTING THE CONSTANTS FROM MATH OBJECT
+        console.log("The value of M.E is", Math.E)
+        console.log("The value of M.LN2 is", Math.LN2)
+        console.log("The value of M.LN10 is", Math.LN10)
+        console.log("The value of M.PI is", Math.PI)
+        console.log("The value of M.SQRT1_2 is", Math.SQRT1_2)
+        // console.log("The value of M. is", Math.)
+
+        // PRINTING THE FUNCTIONS FROM MATH OBJECT
+        let a = 34.6452;
+        let b = 59.2535;
+
+        console.log("The value of a and b rounded is ", Math.round(a), Math.round(b)); // rounding the number using math object function
+
+        console.log("3 raised to the power 2 is ", Math.pow(3, 2));  // genrating the power using math object function pow.
+        console.log("3 raised to the power 3 is ", Math.pow(3, 3));  // genrating the power using math object function pow.
+
+        // function to find the square root of the number using math Object
+        console.log("The square root of 49 is ", Math.sqrt(49));
+        console.log("The square root of 81 is ", Math.sqrt(81));
+        console.log("The square root of 54 is ", Math.sqrt(54));
+
+        // ceil and floor
+        console.log("7.4 rounded up to nearest integer ", Math.ceil(7.4)); // ceil function gives the upper bound of the number.
+        console.log("7.4 rounded up to nearest integer ", Math.floor(7.4)); // floor function gives the lower bound of the function.
+        console.log("7.4 rounded down to nearest integer ", Math.floor(7.4)); // floor function gives the lower bound of the function.
+
+        // abs function.
+        console.log("Absoulte value of 5.6 is ", Math.abs(5.6));
+        console.log("Absoulte value of -5.66 is ", Math.abs(-5.66)); // return the absolute value of the negative number i.e, postive.
+
+        // Trignonmetric functions
+
+        console.log("The value of sin(pi) is ", Math.sin(Math.PI));
+        console.log("The value of sin(pi/2) is ", Math.sin(Math.PI / 2));
+        console.log("The value of cos(pi/2) is ", Math.cos(Math.PI / 2));
+        console.log("The value of tan(pi/2) is ", Math.tan(Math.PI / 2));
+
+        // Min and Max
+        console.log("Minimum of 5, 4, 8, 9, 2 is", Math.min(5, 4, 8, 9, 2));
+        console.log("Maximum of 5, 4, 8, 9, 2 is", Math.max(5, 4, 8, 9, 2));
+
+        // Generating Random Number
+
+        let r = Math.random()
+        console.log("The Random number is ", r);
+
+
+
+
+// E: 2.718281828459045
+// LN2: 0.6931471805599453
+// LN10: 2.302585092994046
+// LOG2E: 1.4426950408889634
+// LOG10E: 0.4342944819032518
+// PI: 3.141592653589793
+// SQRT1_2: 0.7071067811865476
+// SQRT2: 1.4142135623730951
+
+
+
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manipulating DOM</title>
+</head>
+
+<body>
+    <div id="main" class="container">
+        <ul id="nav">
+            <li>Home</li>
+            <li>Services</li>
+            <li>About</li>
+            <li>Contact us</li>
+            <li>Cart</li>
+        </ul>
+    </div>
+    <div class="container">
+        Another Container
+    </div>
+    <script>
+        // target with id
+        let main = document.getElementById("main");
+        console.log(main);
+        let nav = document.getElementById("nav");
+        console.log(nav);
+        // target with class
+        let container = document.getElementsByClassName("container");
+        console.log(container);
+
+        // targeting with CSS selector
+
+        // let sel = document.querySelector(".container");
+        // console.log("Selector Return ", sel); //this return the targetted selector i.e, .conatiner first occurence
+
+        // tragetting here with id
+        // let sel = document.querySelector("#nav");
+        // console.log("Selector Return ", sel);
+        
+        // targetting with tag
+        // let sel = document.querySelector("div>ul>li");
+        // console.log("Selector Return ", sel);
+        
+        // one more query selector whivh selects all the tag/classes and return
+        // let sel = document.querySelectorAll("div>ul>li");
+        // console.log("Selector Return ", sel);
+        // 
+        </script>
+
+</body>
+
+</html>

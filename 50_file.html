@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>String function in javascript</title>
+    <style>
+
+    </style>
+</head>
+
+<body>
+
+
+    <script>
+        var str = "This is a String";
+        console.log(str);
+        // first occurence of sub string
+        var position = str.indexOf("is");
+        console.log(position);
+
+        // Last occurence of sub string
+        position = str.lastIndexOf("is");  // overwritting the variable.
+        console.log(position);
+
+        // substring from a string.
+        // var substr = str.slice(1,3);
+        // var substr = str.substring(1,3); same as slice function.
+        // how many character we want from the string in our new string(substr1)
+        var substr1 = str.substr(1,4);
+        console.log(substr1);
+
+
+        // replace function
+        // var replaced = str.replace('String','Sarthak');
+        // console.log(str);
+        // console.log(replaced);
+
+        // to print str in uppercase
+        console.log(str.toUpperCase());
+
+        // to print str in lower case
+        console.log(str.toLowerCase());
+
+        // concatination of the string
+        var newString = str.concat("New string");
+        console.log(newString);
+
+        // trim function: removes whitespaces from the begining and the ending of the string.
+        var strWithWhiteSpace = "        This is content          whitespace             ";
+        console.log(strWithWhiteSpace);
+        console.log(strWithWhiteSpace.trim());
+
+        // function which return the value of the particular index.
+        var char = str.charAt(10);
+        console.log(char);
+
+        // other way of slicing in string
+        console.log(str[10]);
+
+    </script>
+
+</body>
+
+</html>

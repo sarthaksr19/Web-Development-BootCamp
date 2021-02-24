@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>More on Selectors</title>
+    <style>
+        h2{
+            background-color: cyan;
+            text-align: center;
+            font-weight: bold;
+        }
+        /* this means we target div k ander k paragraph tags */
+        /* div p{
+            text-align: center;
+            background-color: darkorange;
+        } */
+
+
+        /* target the list k ander k paragrapgh ko */
+        /* div li p{
+            text-align: center;
+            background-color: rgb(51, 255, 0)
+        } */
+
+
+        /* below selector says div block which is direct parent of paragraph then select those element*/
+        /* div > p{
+            text-align: center;
+            background-color: rgb(51, 255, 0)
+        } */
+
+
+        /* if p is right after closing div i.e, p is the next sibling of div */
+        div + p{
+            color: white;
+            background-color: royalblue;
+        }
+
+    </style>
+</head>
+<body>
+    <h2>This is more on Selectors</h2>
+    <div class="container">
+        <div class="row">
+            <p>This is first paragraph</p>
+            <ul>
+                <li><p>This is unordered list paragraph</p></li>
+                <li>This will not get affected</li>
+            </ul>
+            <p>This is a paragraph</p>
+        </div>
+        <p>This is another paragraph</p>
+    </div>
+    <p>This is an outer paragraph</p>
+    
+</body>
+</html>

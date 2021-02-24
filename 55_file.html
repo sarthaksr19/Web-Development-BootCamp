@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>For Loop and his types.</title>
+</head>
+<body>
+    <div class="container">
+        This is Loop
+    </div>
+    <script>
+        console.log("This is Loops in js");
+        // let i =0;
+        // for(i=0;i<10;i++){
+        //     console.log(i);
+        // }
+
+        // array iteration using for loop
+
+        // let friends = ["Dev","Ramesh","Suresh","Ram","Shayam"];
+        // for (let index = 0; index < friends.length; index++) {
+        //     console.log(`Good Morning! ${friends[index]}`);            
+        // }
+
+        // array iteration using forEach loop.
+
+        // friends.forEach(function f(elements){
+        //     console.log(`Good Evening! ${elements} Welcome to Modern JavaScript`);
+        // })
+
+        // Array iteration using for of loop.
+
+        // for(elements of friends){
+        //     console.log(`Good Evening! ${elements} Welcome to Modern JavaScript again`);
+        // }
+
+        // if we want to iterate object and want keys and object[value] then we use for in loop
+
+        // creating an object
+
+        let employee = {
+            Name: "Ram",
+            Branch: "CSE",
+            RollNo : 21,
+            Address: "Lucknow"
+        }
+
+        // iterarting using for in loop
+        for(key in employee){
+            console.log(`The ${key} of the employee is ${employee[key]}`);
+        }
+
+    </script>
+</body>
+</html>

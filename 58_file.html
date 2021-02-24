@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SetTimeOut and ClearTimeOut in JavaScript</title>
+    <style>
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        Time Now is <span id="time"></span>
+    </div>
+    <script>
+        console.log("This is JavaScript")
+        
+        // setTimeout --> Allows us to run the function once after the interval of time
+        // setTimeout --> Allows us to run the function repeatedly after the interval of time
+
+        function greet(name){
+            console.log("Hello Good Morning " + name);
+        }
+        // setTimeout(greet, 5000, 'Sarthak');  //here we can pass multiple argument after the function and time(ms) parameter.
+
+        // timeout = setTimeout(greet, 5000, 'Sarthak');
+        // clearTimeout(timeout);   when we wqant to stop the function. we use clearTimeOut
+
+        // setTimeout(greet(), 5000, 'Sarthak'); --> wrong as it is calling the function inside setTimeout
+
+        // setInterval(greet, 2000, 'Sarthak'); // runs repeatedly after the interval of time.
+
+        // intervalId = setInterval(greet, 2000, 'Sarthak');
+        // clearInterval(intervalId);  // This function clearInterval() will stop the seInterval function.
+
+        // Displaying Time.
+        function displayTime(){
+            time = new Date();
+            console.log(time);
+            document.getElementById('time').innerHTML = time;
+        }
+
+        setInterval(displayTime, 1000);
+    </script>
+    
+</body>
+</html>
